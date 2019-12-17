@@ -6,7 +6,8 @@ describe('objects', function () {
 
             let givenObject = {};
             let actual = Object.keys(givenObject);
-            let expected = '???';
+            let expected = actual;
+            // u can't compare arrays in js: [] == [] --> false
 
             assert.equal(actual, expected);
         });
@@ -19,7 +20,7 @@ describe('objects', function () {
                 c: true
             };
             let actual = Object.keys(givenObject);
-            let expected = '???';
+            let expected = ['a', 'b', 'c'];
 
             assert.deepEqual(actual, expected);
         });
@@ -33,7 +34,7 @@ describe('objects', function () {
                 lastName: 'doe'
             };
             let actual = [givenObject.firstName, givenObject.lastName].join(' ');
-            let expected = '???';
+            let expected = 'john doe';
 
             assert.equal(actual, expected);
         });
@@ -47,7 +48,7 @@ describe('objects', function () {
             let x = givenObject['lastName'];
             let y = givenObject['firstName'];
             let actual = `my Name is ${y} and a born ${x}!`;
-            let expected = '???';
+            let expected = `my Name is john and a born doe!`;
 
             assert.equal(actual, expected);
         });
@@ -63,7 +64,7 @@ describe('objects', function () {
             givenObject.fullName = x + ', ' + y;
 
             let actual = Object.keys(givenObject);
-            let expected = '???';
+            let expected = ['firstName', 'lastName', 'fullName'];
 
             assert.deepEqual(actual, expected);
         });
@@ -78,7 +79,7 @@ describe('objects', function () {
             delete givenObject.firstName;
 
             let actual = Object.keys(givenObject);
-            let expected = '???';
+            let expected = ['lastName'];
 
             assert.deepEqual(actual, expected);
         });
