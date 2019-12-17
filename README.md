@@ -33,3 +33,23 @@ Now solve the test suite by fixing all the tests:
 Now solve the test suite by fixing all the tests:
 
 ```npm run single -- controlstructures```
+
+3. Arrays
+---------------------
+
+- what operations would you do with a list of elements? List them!
+- why do you think is this true ```typeof [] ==  "object"```? What makes an object an object in classical programming?
+
+Now solve the test suite by fixing all the tests:
+
+```npm run single -- arrays```
+
+
+4. Objects
+---------------------
+
+- Objects are container elements are also known as map, hashmap or key-value pair. Not much to it :-)
+
+Now solve the test suite by fixing all the tests:
+
+```npm run single -- objects```
