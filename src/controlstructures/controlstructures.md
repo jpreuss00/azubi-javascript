@@ -35,12 +35,12 @@
 2. given a loop that prints number from 1 to 5. Implement this with a for loop and a while loop.
 
     - 
-        for (var i = 1, i == 5, i++){
+        for (var i = 1; i < 6; i++){
             console.log (i);
         }
 
         var i = 0
-        while (i < 6){
+        while (i < 5){
             i++;
             console.log(i)
         }
