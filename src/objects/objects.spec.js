@@ -6,10 +6,10 @@ describe('objects', function () {
 
             let givenObject = {};
             let actual = Object.keys(givenObject);
-            let expected = actual;
+            let expected = [];
             // u can't compare arrays in js: [] == [] --> false
 
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
 
         it('should return ??? of an object with keys', function () {
