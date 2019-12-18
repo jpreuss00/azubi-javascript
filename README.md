@@ -60,7 +60,7 @@ Now solve the test suite by fixing all the tests:
 
 - write a function in three different programming languages that returns the sum of two numbers, which have been given to the function as an argument.
 - what is similar in all three implementations? what is different?
-- explain variable shadowing. Give me an example!
+- explain variable shadowing. Give me an example!qqqqq
 
 Now solve the test suite by fixing all the tests:
 
@@ -75,4 +75,4 @@ Now solve the test suite by fixing all the tests:
 
 Now solve the test suite by fixing all the tests:
 
-```npm run single -- scope```
+``` ```

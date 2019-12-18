@@ -6,7 +6,7 @@ describe('functions', function () {
 
             function noop() {}
             
-            let expected = '???';
+            let expected = undefined;
 
             let actual = noop();
 
@@ -20,7 +20,7 @@ describe('functions', function () {
             }
 
             let actual = returnRandomNumber();
-            let expected = '???' < actual && actual < '???';
+            let expected = 0 < actual && actual < 1;
 
             assert.equal(true, expected);
         });
@@ -33,7 +33,7 @@ describe('functions', function () {
             }
 
             let actual = returnRandomNumber();
-            let expected = '???';
+            let expected = 123;
 
             assert.equal(actual, expected);
 
@@ -48,7 +48,7 @@ describe('functions', function () {
             }
 
             let actual = returnNumber();
-            let expected = '???';
+            let expected = 432;
 
             assert.equal(actual, expected);
         });
@@ -62,7 +62,7 @@ describe('functions', function () {
             }
 
             let actual = returnNumber();
-            let expected = '???';
+            let expected = 5432;
 
             assert.equal(actual, expected);
         });
@@ -79,7 +79,7 @@ describe('functions', function () {
             var number = 432;
 
             let actual = returnNumber();
-            let expected = '???';
+            let expected = 5432;
 
             assert.equal(actual, expected);
         });
@@ -95,9 +95,9 @@ describe('functions', function () {
 
             returnNumber(1,2);
             let actual = Object.keys(args);
-            let expected = '???';
+            let expected = ['0', '1'];
 
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
 
         it('can has many arguments', function () {
@@ -110,9 +110,9 @@ describe('functions', function () {
 
             returnNumber(1,2,3,'a', 'b');
             let actual = Object.keys(args);
-            let expected = '???';
+            let expected = ['0', '1', '2', '3', '4'];
 
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
     });
 
@@ -124,8 +124,8 @@ describe('functions', function () {
                 for (var i of demo) sum += i;
                 return sum;
             })(1,2,3,4,5)
-            
-            let expected = '???';
+
+            let expected = 15;
 
             assert.equal(actual, expected);
         });
@@ -147,7 +147,7 @@ describe('functions', function () {
             count();
 
             let actual = count();
-            let expected = '???';
+            let expected = 3;
 
             assert.equal(actual, expected);
         });
