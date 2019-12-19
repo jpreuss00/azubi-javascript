@@ -76,9 +76,6 @@ Now solve the test suite by fixing all the tests:
 
 Now solve the test suite by fixing all the tests:
 
-<<<<<<< HEAD
-``` ```
-=======
 ```npm run single -- scope```
 
 
@@ -95,4 +92,3 @@ There are many definitions of 'prototype': 1) an original model on which somethi
 Now solve the test suite by fixing all the tests:
 
 ```npm run single -- prototypes```
->>>>>>> upstream/master
